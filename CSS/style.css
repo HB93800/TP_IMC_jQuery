@@ -1,0 +1,105 @@
+.container{
+    font-family: 'Square Peg', cursive;
+    font-size: 25px;
+    width:70%;
+    margin: 1% auto;
+}
+.titre h1{
+    font-size: 45px;
+    border-bottom: solid rgb(244, 201, 123) 2px;
+    margin-bottom: 4%;
+}
+.titre_expl{
+    width: 80%;
+}
+h1{
+    margin: 0% 0%;
+    padding: 0;
+    font-size: 40px;
+}
+hr{
+    background-color: orange;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+}
+.container2{
+    /*display: flex;
+    flex-wrap: wrap;*/
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 2% ;
+
+}
+.formulaire, .soumettre{
+    background: rgb(223, 218, 218);
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.soumettre{
+    padding-bottom: 4%;
+}
+label, input{
+    width: 40%;
+    margin-left: 5%
+}
+input{
+    width: 40%;
+    margin-left: 5%;
+}
+.btn_soum {
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 20%;
+    background-color: red;
+    color: azure;
+    font-weight: bold;
+}
+.reset{
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 20%;
+    background-color: rgb(104, 97, 238);
+    color: azure;
+    font-weight: bold;
+}
+.resultat{
+    background: rgb(223, 218, 218);
+    display: block;
+    margin-top: 5%;
+}
+.imc{
+    font-size: 45px;
+    color: red;
+}
+.imc_expl{
+    font-size: 30px;
+    color: red;
+}
+@media screen and (max-device-width:783px) {
+    .container{
+        width: 100%;
+        font-size: 25px !important;
+    }
+    .titre h1, h1{
+        font-size: 30px;
+    }
+    .container2{
+        width: 80%;
+    }
+    .btn_soum, .reset{
+        font-size:8px ;
+        font-weight: bold;
+    }
+  
+        width: 50%;
+        margin-top: 1%;
+        margin-left: 20%;
+        background-color: rgb(104, 97, 238);
+        color: azure;
+        font-weight: bold;
+    }
+}

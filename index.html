@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet   "> 
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/mon_js.js"></script>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <div class="titre">
+                <h1>
+                    Calcul de votre IMC
+                </h1>
+            </div>
+        </header>
+        <nav class="container1">
+            <section class="explications">
+                <div class="titre_expl">
+                    <h1>
+                        Exemple de calcul
+                    </h1>
+                    <hr>
+                </div>
+              
+                <div class="text_expl">
+                    <ul>
+                        <li> Poids = 70Kg</li>
+                        <li> Taille = 1.60m</li>                        
+                    </ul>
+                </div>   
+                
+                 <div class="text_expl21">
+                     <p>
+                        IMC = 70 / 1.60² = 27.3 surpoids
+                     </p>
+                 </div>
+                 <div class="text_expl22">
+                    Un <b>IMC normal</b> est compris entre 18,5 et 25. En dessous de 18,5, l'individu est 
+                    considéré comme trop maigre. Au-dessus de 25, c'est du surpoids. A partir de 30, on 
+                    parle d'obésité.                    
+                </div>
+                <div class="text_expl">
+                    <ul>
+                        <li> IMC < 18,5 kg/m² : insuffisance pondérale</li>
+                        <li> 18,5 < IMC < 24,9 : poids normal</li>                        
+                        <li>  25 < IMC < 29,9 : surpoids</li>                        
+                        <li> IMC > 30 : 
+                            <a href="https://sante.journaldesfemmes.fr/fiches-maladies/2605013-obesite-moderee-morbide-definition-symptomes-imc-causes-consequences-solutions-calcul/" class="link"> obésité</a>
+                        </li>                        
+                    </ul>
+                </div>      
+                <div class="container2">
+                    <form action="#" method="#" class="formulaire">
+                        <label for="">Votre taille (en cm) </label>
+                        <input type="text" class="taille">
+                        <label for="">Votre    poids (en kg) </label>
+                        <input type="text" class="poids">
+                    </form>
+                    <div class="soumettre">
+                        <input type="button" class="btn_soum" value="JE CALCULE MON IMC">
+                        <button class="reset" onclick=refresh()> Reset</button>
+                    </div>
+                    <section class="resultat">
+                        <div class="text_result">
+                            <h1>
+                                Résultat
+                            </h1>
+                            <span>
+                                Votre IMC (indice de masse corporelle) est de :
+                            </span>
+                        </div>
+                        <div class="imc">
+                            00.0
+                        </div>
+                        <div class="imc_expl">
+                            IMC = 0
+                        </div>
+                    </section>
+                </div>
+                <hr>
+
+
+            </section>
+        </nav>
+    </section>
+    
+</body>
+</html>
